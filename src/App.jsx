@@ -1,22 +1,17 @@
-// import { Fragment } from 'react';
-import Header from './component/Header/Header';
+import { Fragment, useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+// import { ProductList, Header } from "./components";
 import ProductList from './component/ProductList/ProductList';
-import './App.css'
-
-
-
-
+import Header from './component/Header/Header';
+import { updateUser } from "./redux/cart";
+// import axios from "axios";
 function App() {
- 
-
-  return (
-    <>
-   <Header/>
-   <ProductList/>
-
-      
-    </>
-  )
+   return (
+      <Fragment>
+         <Header />
+         <ProductList />
+      </Fragment>
+   );
 }
 
-export default App
+export default App;
